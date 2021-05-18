@@ -1,8 +1,9 @@
 {
-  "name": "fp-ts-library-template",
-  "homepage": "https://github.com/no-day/fp-ts-library-template",
-  "version": "1.0.0-rc.1",
+  "name": "fp-ts-number-instances",
+  "homepage": "https://github.com/no-day/fp-ts-number-instances",
+  "version": "1.0.0",
   "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
   "license": "MIT",
   "peerDependencies": {
     "fp-ts": "^2.9.5"

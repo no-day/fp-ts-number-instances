@@ -1,4 +1,4 @@
-/** @since 0.1.0 */
+/** @since 1.0.0 */
 
 import { pipe } from 'fp-ts/function'
 import * as S from 'fp-ts/Semiring'
@@ -6,46 +6,50 @@ import * as R from 'fp-ts/Ring'
 import * as F from 'fp-ts/Field'
 
 // -----------------------------------------------------------------------------
-// Constructors
+// Semiring
 // -----------------------------------------------------------------------------
 
 /**
- * @since 0.1.0
- * @category Constructors
- */
-export const zero = 0
-
-/**
- * @since 0.1.0
- * @category Constructors
- */
-export const one = 1
-
-// -----------------------------------------------------------------------------
-// Combinators
-// -----------------------------------------------------------------------------
-
-/**
- * @since 0.1.0
- * @category Combinators
+ * @since 1.0.0
+ * @category Semiring
  */
 export const add = (x1: number) => (x2: number): number => x1 + x2
 
 /**
- * @since 0.1.0
- * @category Combinators
+ * @since 1.0.0
+ * @category Semiring
  */
-export const sub = (x1: number) => (x2: number): number => x1 - x2
+export const zero = 0
 
 /**
- * @since 0.1.0
- * @category Combinators
+ * @since 1.0.0
+ * @category Semiring
+ */
+export const one = 1
+
+/**
+ * @since 1.0.0
+ * @category Semiring
  */
 export const mul = (x1: number) => (x2: number): number => x1 * x2
 
+// -----------------------------------------------------------------------------
+// Ring
+// -----------------------------------------------------------------------------
+
 /**
- * @since 0.1.0
- * @category Combinators
+ * @since 1.0.0
+ * @category Ring
+ */
+export const sub = (x1: number) => (x2: number): number => x1 - x2
+
+// -----------------------------------------------------------------------------
+// Field
+// -----------------------------------------------------------------------------
+
+/**
+ * @since 1.0.0
+ * @category Field
  */
 export const div = (x1: number) => (x2: number): number => x1 / x2
 
@@ -68,7 +72,7 @@ const div_: F.Field<number>['div'] = (x1, x2) => pipe(x2, div(x1))
 /**
  * Non law abiding semiring instance for number
  *
- * @since 0.1.0
+ * @since 1.0.0
  * @category Instances
  */
 export const Semiring: S.Semiring<number> = {
@@ -81,7 +85,7 @@ export const Semiring: S.Semiring<number> = {
 /**
  * Non law abiding ring instance for number
  *
- * @since 0.1.0
+ * @since 1.0.0
  * @category Instances
  */
 export const Ring: R.Ring<number> = {
@@ -90,9 +94,9 @@ export const Ring: R.Ring<number> = {
 }
 
 /**
- * Non law abiding ring instance for number
+ * Non law abiding field instance for number
  *
- * @since 0.1.0
+ * @since 1.0.0
  * @category Instances
  */
 export const Field: F.Field<number> = {
