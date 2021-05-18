@@ -6,4 +6,4 @@ search_enabled: true
 # Aux links for the upper right navigation
 aux_links:
   'fp-ts-library-template on GitHub':
-    - 'https://github.com/no-day/fp-ts-library-template'
+    - 'https://github.com/no-day/fp-ts-number-instances'
