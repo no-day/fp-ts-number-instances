@@ -6,38 +6,29 @@ parent: Modules
 
 ## index overview
 
-Added in v0.1.0
+Added in v1.0.0
 
 ---
 
 <h2 class="text-delta">Table of contents</h2>
 
-- [Combinators](#combinators)
-  - [add](#add)
+- [Field](#field)
   - [div](#div)
-  - [mul](#mul)
-  - [sub](#sub)
-- [Constructors](#constructors)
-  - [one](#one)
-  - [zero](#zero)
 - [Instances](#instances)
-  - [Field](#field)
+  - [Field](#field-1)
   - [Ring](#ring)
   - [Semiring](#semiring)
+- [Ring](#ring-1)
+  - [sub](#sub)
+- [Semiring](#semiring-1)
+  - [add](#add)
+  - [mul](#mul)
+  - [one](#one)
+  - [zero](#zero)
 
 ---
 
-# Combinators
-
-## add
-
-**Signature**
-
-```ts
-export declare const add: (x1: number) => (x2: number) => number
-```
-
-Added in v0.1.0
+# Field
 
 ## div
 
@@ -47,55 +38,13 @@ Added in v0.1.0
 export declare const div: (x1: number) => (x2: number) => number
 ```
 
-Added in v0.1.0
-
-## mul
-
-**Signature**
-
-```ts
-export declare const mul: (x1: number) => (x2: number) => number
-```
-
-Added in v0.1.0
-
-## sub
-
-**Signature**
-
-```ts
-export declare const sub: (x1: number) => (x2: number) => number
-```
-
-Added in v0.1.0
-
-# Constructors
-
-## one
-
-**Signature**
-
-```ts
-export declare const one: 1
-```
-
-Added in v0.1.0
-
-## zero
-
-**Signature**
-
-```ts
-export declare const zero: 0
-```
-
-Added in v0.1.0
+Added in v1.0.0
 
 # Instances
 
 ## Field
 
-Non law abiding ring instance for number
+Non law abiding field instance for number
 
 **Signature**
 
@@ -103,7 +52,7 @@ Non law abiding ring instance for number
 export declare const Field: F.Field<number>
 ```
 
-Added in v0.1.0
+Added in v1.0.0
 
 ## Ring
 
@@ -115,7 +64,7 @@ Non law abiding ring instance for number
 export declare const Ring: R.Ring<number>
 ```
 
-Added in v0.1.0
+Added in v1.0.0
 
 ## Semiring
 
@@ -127,4 +76,58 @@ Non law abiding semiring instance for number
 export declare const Semiring: S.Semiring<number>
 ```
 
-Added in v0.1.0
+Added in v1.0.0
+
+# Ring
+
+## sub
+
+**Signature**
+
+```ts
+export declare const sub: (x1: number) => (x2: number) => number
+```
+
+Added in v1.0.0
+
+# Semiring
+
+## add
+
+**Signature**
+
+```ts
+export declare const add: (x1: number) => (x2: number) => number
+```
+
+Added in v1.0.0
+
+## mul
+
+**Signature**
+
+```ts
+export declare const mul: (x1: number) => (x2: number) => number
+```
+
+Added in v1.0.0
+
+## one
+
+**Signature**
+
+```ts
+export declare const one: 1
+```
+
+Added in v1.0.0
+
+## zero
+
+**Signature**
+
+```ts
+export declare const zero: 0
+```
+
+Added in v1.0.0
